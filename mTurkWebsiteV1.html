@@ -22,6 +22,10 @@
         padding-top: 3%;
     }
 
+    .fixed-div {
+    	position: fixed;
+    }
+
     #second,
     #third,
     #fourth,
@@ -37,6 +41,12 @@
 
     </style>
     <script>
+
+
+$(document).ready(function() {
+	$('#submitButton').hide();
+});
+
     function to_first() {
         document.getElementById("first").style.display = "block";
         document.getElementById("second").style.display = "none";
@@ -739,7 +749,7 @@
                             <button onclick="to_ninth()" class="btn">Previous</button>
                         </div>
                         <div class="col-lg-2">
-                            <button type="Submit" value="Submit" class="btn btn-primary">Submit HIT</button>
+                            <button id="submitButton" type="Submit" value="Submit" class="btn btn-primary">Submit HIT</button>
                         </div>
                         <div class="col-lg-6"></div>
                     </div>
