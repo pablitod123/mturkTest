@@ -17,11 +17,258 @@
         text-align: right;
         padding-top: 3%;
     }
-    </style>
 
+    #second, #third, #fourth, #fifth, #sixth, #seventh, #eighth, #ninth, #tenth {
+		display: none;
+    }
+
+    </style>
     <script>
+    function to_first() {
+        document.getElementById("first").style.display = "block";
+        document.getElementById("second").style.display = "none";
+        document.getElementById("third").style.display = "none";
+        document.getElementById("fourth").style.display = "none";
+        document.getElementById("fifth").style.display = "none";
+        document.getElementById("sixth").style.display = "none";
+        document.getElementById("seventh").style.display = "none";
+        document.getElementById("eighth").style.display = "none";
+        document.getElementById("ninth").style.display = "none";
+        document.getElementById("tenth").style.display = "none";
+
+        document.getElementById("first_nav").classList.add("active");
+        document.getElementById("second_nav").classList.remove("active");
+        document.getElementById("third_nav").classList.remove("active");
+        document.getElementById("fourth_nav").classList.remove("active");
+        document.getElementById("fifth_nav").classList.remove("active");
+        document.getElementById("sixth_nav").classList.remove("active");
+        document.getElementById("seventh_nav").classList.remove("active");
+        document.getElementById("eighth_nav").classList.remove("active");
+        document.getElementById("ninth_nav").classList.remove("active");
+        document.getElementById("tenth_nav").classList.remove("active");
+    }
+
+    function to_second() {
+        document.getElementById("first").style.display = "none";
+        document.getElementById("second").style.display = "block";
+        document.getElementById("third").style.display = "none";
+        document.getElementById("fourth").style.display = "none";
+        document.getElementById("fifth").style.display = "none";
+        document.getElementById("sixth").style.display = "none";
+        document.getElementById("seventh").style.display = "none";
+        document.getElementById("eighth").style.display = "none";
+        document.getElementById("ninth").style.display = "none";
+        document.getElementById("tenth").style.display = "none";
+        
+        document.getElementById("first_nav").classList.remove("active");
+        document.getElementById("second_nav").classList.add("active");
+        document.getElementById("third_nav").classList.remove("active");
+        document.getElementById("fourth_nav").classList.remove("active");
+        document.getElementById("fifth_nav").classList.remove("active");
+        document.getElementById("sixth_nav").classList.remove("active");
+        document.getElementById("seventh_nav").classList.remove("active");
+        document.getElementById("eighth_nav").classList.remove("active");
+        document.getElementById("ninth_nav").classList.remove("active");
+        document.getElementById("tenth_nav").classList.remove("active");
+
+    }
+
+    function to_third() {
+        document.getElementById("first").style.display = "none";
+        document.getElementById("second").style.display = "none";
+        document.getElementById("third").style.display = "block";
+        document.getElementById("fourth").style.display = "none";
+        document.getElementById("fifth").style.display = "none";
+        document.getElementById("sixth").style.display = "none";
+        document.getElementById("seventh").style.display = "none";
+        document.getElementById("eighth").style.display = "none";
+        document.getElementById("ninth").style.display = "none";
+        document.getElementById("tenth").style.display = "none";
+
+        document.getElementById("first_nav").classList.remove("active");
+        document.getElementById("second_nav").classList.remove("active");
+        document.getElementById("third_nav").classList.add("active");
+        document.getElementById("fourth_nav").classList.remove("active");
+        document.getElementById("fifth_nav").classList.remove("active");
+        document.getElementById("sixth_nav").classList.remove("active");
+        document.getElementById("seventh_nav").classList.remove("active");
+        document.getElementById("eighth_nav").classList.remove("active");
+        document.getElementById("ninth_nav").classList.remove("active");
+        document.getElementById("tenth_nav").classList.remove("active");
+    }
+
+    function to_fourth() {
+        document.getElementById("first").style.display = "none";
+        document.getElementById("second").style.display = "none";
+        document.getElementById("third").style.display = "none";
+        document.getElementById("fourth").style.display = "block";
+        document.getElementById("fifth").style.display = "none";
+        document.getElementById("sixth").style.display = "none";
+        document.getElementById("seventh").style.display = "none";
+        document.getElementById("eighth").style.display = "none";
+        document.getElementById("ninth").style.display = "none";
+        document.getElementById("tenth").style.display = "none";
+
+        document.getElementById("first_nav").classList.remove("active");
+        document.getElementById("second_nav").classList.remove("active");
+        document.getElementById("third_nav").classList.remove("active");
+        document.getElementById("fourth_nav").classList.add("active");
+        document.getElementById("fifth_nav").classList.remove("active");
+        document.getElementById("sixth_nav").classList.remove("active");
+        document.getElementById("seventh_nav").classList.remove("active");
+        document.getElementById("eighth_nav").classList.remove("active");
+        document.getElementById("ninth_nav").classList.remove("active");
+        document.getElementById("tenth_nav").classList.remove("active");
+    }
+
+    function to_fifth() {
+        document.getElementById("first").style.display = "none";
+        document.getElementById("second").style.display = "none";
+        document.getElementById("third").style.display = "none";
+        document.getElementById("fourth").style.display = "none";
+        document.getElementById("fifth").style.display = "block";
+        document.getElementById("sixth").style.display = "none";
+        document.getElementById("seventh").style.display = "none";
+        document.getElementById("eighth").style.display = "none";
+        document.getElementById("ninth").style.display = "none";
+        document.getElementById("tenth").style.display = "none";
+
+        document.getElementById("first_nav").classList.remove("active");
+        document.getElementById("second_nav").classList.remove("active");
+        document.getElementById("third_nav").classList.remove("active");
+        document.getElementById("fourth_nav").classList.remove("active");
+        document.getElementById("fifth_nav").classList.add("active");
+        document.getElementById("sixth_nav").classList.remove("active");
+        document.getElementById("seventh_nav").classList.remove("active");
+        document.getElementById("eighth_nav").classList.remove("active");
+        document.getElementById("ninth_nav").classList.remove("active");
+        document.getElementById("tenth_nav").classList.remove("active");
+    }
+
+    function to_sixth() {
+        document.getElementById("first").style.display = "none";
+        document.getElementById("second").style.display = "none";
+        document.getElementById("third").style.display = "none";
+        document.getElementById("fourth").style.display = "none";
+        document.getElementById("fifth").style.display = "none";
+        document.getElementById("sixth").style.display = "block";
+        document.getElementById("seventh").style.display = "none";
+        document.getElementById("eighth").style.display = "none";
+        document.getElementById("ninth").style.display = "none";
+        document.getElementById("tenth").style.display = "none";
+
+        document.getElementById("first_nav").classList.remove("active");
+        document.getElementById("second_nav").classList.remove("active");
+        document.getElementById("third_nav").classList.remove("active");
+        document.getElementById("fourth_nav").classList.remove("active");
+        document.getElementById("fifth_nav").classList.remove("active");
+        document.getElementById("sixth_nav").classList.add("active");
+        document.getElementById("seventh_nav").classList.remove("active");
+        document.getElementById("eighth_nav").classList.remove("active");
+        document.getElementById("ninth_nav").classList.remove("active");
+        document.getElementById("tenth_nav").classList.remove("active");
+    }
+
+    function to_seventh() {
+        document.getElementById("first").style.display = "none";
+        document.getElementById("second").style.display = "none";
+        document.getElementById("third").style.display = "none";
+        document.getElementById("fourth").style.display = "none";
+        document.getElementById("fifth").style.display = "none";
+        document.getElementById("sixth").style.display = "none";
+        document.getElementById("seventh").style.display = "block";
+        document.getElementById("eighth").style.display = "none";
+        document.getElementById("ninth").style.display = "none";
+        document.getElementById("tenth").style.display = "none";
+
+        document.getElementById("first_nav").classList.remove("active");
+        document.getElementById("second_nav").classList.remove("active");
+        document.getElementById("third_nav").classList.remove("active");
+        document.getElementById("fourth_nav").classList.remove("active");
+        document.getElementById("fifth_nav").classList.remove("active");
+        document.getElementById("sixth_nav").classList.remove("active");
+        document.getElementById("seventh_nav").classList.add("active");
+        document.getElementById("eighth_nav").classList.remove("active");
+        document.getElementById("ninth_nav").classList.remove("active");
+        document.getElementById("tenth_nav").classList.remove("active");
+    }
+
+    function to_eighth() {
+        document.getElementById("first").style.display = "none";
+        document.getElementById("second").style.display = "none";
+        document.getElementById("third").style.display = "none";
+        document.getElementById("fourth").style.display = "none";
+        document.getElementById("fifth").style.display = "none";
+        document.getElementById("sixth").style.display = "none";
+        document.getElementById("seventh").style.display = "none";
+        document.getElementById("eighth").style.display = "block";
+        document.getElementById("ninth").style.display = "none";
+        document.getElementById("tenth").style.display = "none";
+
+        document.getElementById("first_nav").classList.remove("active");
+        document.getElementById("second_nav").classList.remove("active");
+        document.getElementById("third_nav").classList.remove("active");
+        document.getElementById("fourth_nav").classList.remove("active");
+        document.getElementById("fifth_nav").classList.remove("active");
+        document.getElementById("sixth_nav").classList.remove("active");
+        document.getElementById("seventh_nav").classList.remove("active");
+        document.getElementById("eighth_nav").classList.add("active");
+        document.getElementById("ninth_nav").classList.remove("active");
+        document.getElementById("tenth_nav").classList.remove("active");
+    }
+
+    function to_ninth() {
+        document.getElementById("first").style.display = "none";
+        document.getElementById("second").style.display = "none";
+        document.getElementById("third").style.display = "none";
+        document.getElementById("fourth").style.display = "none";
+        document.getElementById("fifth").style.display = "none";
+        document.getElementById("sixth").style.display = "none";
+        document.getElementById("seventh").style.display = "none";
+        document.getElementById("eighth").style.display = "none";
+        document.getElementById("ninth").style.display = "block";
+        document.getElementById("tenth").style.display = "none";
+
+        document.getElementById("first_nav").classList.remove("active");
+        document.getElementById("second_nav").classList.remove("active");
+        document.getElementById("third_nav").classList.remove("active");
+        document.getElementById("fourth_nav").classList.remove("active");
+        document.getElementById("fifth_nav").classList.remove("active");
+        document.getElementById("sixth_nav").classList.remove("active");
+        document.getElementById("seventh_nav").classList.remove("active");
+        document.getElementById("eighth_nav").classList.remove("active");
+        document.getElementById("ninth_nav").classList.add("active");
+        document.getElementById("tenth_nav").classList.remove("active");
+    }
+
+    function to_tenth() {
+        document.getElementById("first").style.display = "none";
+        document.getElementById("second").style.display = "none";
+        document.getElementById("third").style.display = "none";
+        document.getElementById("fourth").style.display = "none";
+        document.getElementById("fifth").style.display = "none";
+        document.getElementById("sixth").style.display = "none";
+        document.getElementById("seventh").style.display = "none";
+        document.getElementById("eighth").style.display = "none";
+        document.getElementById("ninth").style.display = "none";
+        document.getElementById("tenth").style.display = "block";
+
+        document.getElementById("first_nav").classList.remove("active");
+        document.getElementById("second_nav").classList.remove("active");
+        document.getElementById("third_nav").classList.remove("active");
+        document.getElementById("fourth_nav").classList.remove("active");
+        document.getElementById("fifth_nav").classList.remove("active");
+        document.getElementById("sixth_nav").classList.remove("active");
+        document.getElementById("seventh_nav").classList.remove("active");
+        document.getElementById("eighth_nav").classList.remove("active");
+        document.getElementById("ninth_nav").classList.remove("active");
+        document.getElementById("tenth_nav").classList.add("active");
+    }
+
+
     //onClick, change where "active" is on the current page class
     //onClick, view new page... however that will work 
+    //for the scrolling views, make it where images work normally and the right column with form input is fixed
     </script>
 </head>
 
@@ -36,60 +283,460 @@
             <div class="col-lg-7 col-sm-11">
                 <nav>
                     <ul class="pagination">
-                        <li onclick="toReceipt()" value="one" class="page-item"><a class="page-link">1</a></li>
-                        <li onclick="" class="page-item"><a class="page-link">2</a></li>
-                        <li onclick="" class="page-item"><a class="page-link">3</a></li>
-                        <li onclick="" class="page-item"><a class="page-link">4</a></li>
-                        <li onclick="" class="page-item"><a class="page-link">5</a></li>
-                        <li onclick="" class="page-item"><a class="page-link">6</a></li>
-                        <li onclick="" class="page-item"><a class="page-link">7</a></li>
-                        <li onclick="" class="page-item"><a class="page-link">8</a></li>
-                        <li onclick="" class="page-item"><a class="page-link">9</a></li>
-                        <li onclick="" class="page-item"><a class="page-link">10</a></li>
+                        <li id="first_nav" onclick="to_first()" class="page-item"><a class="page-link">1</a></li>
+                        <li id="second_nav" onclick="to_second()" class="page-item"><a class="page-link">2</a></li>
+                        <li id="third_nav" onclick="to_third()" class="page-item"><a class="page-link">3</a></li>
+                        <li id="fourth_nav" onclick="to_fourth()" class="page-item"><a class="page-link">4</a></li>
+                        <li id="fifth_nav" onclick="to_fifth()" class="page-item"><a class="page-link">5</a></li>
+                        <li id="sixth_nav" onclick="to_sixth()" class="page-item"><a class="page-link">6</a></li>
+                        <li id="seventh_nav" onclick="to_seventh()" class="page-item"><a class="page-link">7</a></li>
+                        <li id="eighth_nav" onclick="to_eighth()" class="page-item"><a class="page-link">8</a></li>
+                        <li id="ninth_nav" onclick="to_ninth()" class="page-item"><a class="page-link">9</a></li>
+                        <li id="tenth_nav" onclick="to_tenth()" class="page-item"><a class="page-link">10</a></li>
                     </ul>
                 </nav>
             </div>
         </div>
-        <div class="row">
-            <div class="col-lg-6">
-                <a href="https://planetfundraiser.com/files/get/sms-uploads/phpKTPEbR.jpg" target="_blank">
-                    <image class="img-fluid" src="https://planetfundraiser.com/files/get/sms-uploads/phpKTPEbR.jpg"></image>
-                </a>
-            </div>
-            <div class="questions col-lg-6">
-                <p>Is the receipt legible?</p>
-                <p>Yes, No</p>
-                <p>Does the Merchant Name match the following text: Welcome to Chick-fil-A Trussville? </p>
-                <div class="form-group">
-                    <label for="exampleSelect1">Date</label>
-                    <select class="form-control">
-                        <option>9/14/2017</option>
-                        <option>9/15/2017</option>
-                        <option>9/16/2017</option>
-                        <option>9/17/2017</option>
-                        <option>9/18/2017</option>
-                        <option>9/19/2017</option>
-                        <option>9/20/2017</option>
-                        <option>9/21/2017</option>
-                        <option>Date not listed</option>
-                        <option>Date on receipt not in above list</option>
-                    </select>
+
+       <!--  First Receipt -->
+        <fieldset id="first">
+            <div class="row">
+                <div class="col-lg-6">
+                    <a href="https://planetfundraiser.com/files/get/sms-uploads/phpKTPEbR.jpg" target="_blank">
+                        <image class="img-fluid" src="https://planetfundraiser.com/files/get/sms-uploads/phpKTPEbR.jpg"></image>
+                    </a>
                 </div>
-                <p></p>
-                <p>Time:</p>
-                <p>Is the receipt total the following? </p>
-                <div class="row">
-                    <div class="col-lg-2"></div>
-                    <div class="col-lg-2">
-                        <button class="btn">Previous</button>
+                <div class="questions col-lg-6">
+                    <p>Is the receipt legible?</p>
+                    <p>Yes, No</p>
+                    <p>Does the Merchant Name match the following text: Welcome to Chick-fil-A Trussville? </p>
+                    <div class="form-group">
+                        <label for="exampleSelect1">Date</label>
+                        <select class="form-control">
+                            <option>9/14/2017</option>
+                            <option>9/15/2017</option>
+                            <option>9/16/2017</option>
+                            <option>9/17/2017</option>
+                            <option>9/18/2017</option>
+                            <option>9/19/2017</option>
+                            <option>9/20/2017</option>
+                            <option>9/21/2017</option>
+                            <option>Date not listed</option>
+                            <option>Date on receipt not in above list</option>
+                        </select>
                     </div>
-                    <div class="col-lg-2">
-                        <button class="btn btn-secondary">Next</button>
+                    <p></p>
+                    <p>Time:</p>
+                    <p>Is the receipt total the following? </p>
+                    <div class="row">
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-2">
+                            <button disabled class="btn">Previous</button>
+                        </div>
+                        <div class="col-lg-2">
+                            <button onclick="to_second()" class="btn btn-secondary">Next</button>
+                        </div>
+                        <div class="col-lg-6"></div>
                     </div>
-                    <div class="col-lg-6"></div>
                 </div>
             </div>
-        </div>
+        </fieldset>
+        <!--  Second Receipt -->
+        <fieldset id="second">
+            <div class="row">
+                <div class="col-lg-6">
+                    <a href="https://planetfundraiser.com/files/get/sms-uploads/phpKTPEbR.jpg" target="_blank">
+                        <image class="img-fluid" src="https://planetfundraiser.com/files/get/sms-uploads/phpKTPEbR.jpg"></image>
+                    </a>
+                </div>
+                <div class="questions col-lg-6">
+                 <p><b>Receipt #2!</b></p>
+                    <p>Is the receipt legible?</p>
+                    <p>Yes, No</p>
+                    <p>Does the Merchant Name match the following text: Welcome to Chick-fil-A Trussville? </p>
+                    <div class="form-group">
+                        <label for="exampleSelect1">Date</label>
+                        <select class="form-control">
+                            <option>9/14/2017</option>
+                            <option>9/15/2017</option>
+                            <option>9/16/2017</option>
+                            <option>9/17/2017</option>
+                            <option>9/18/2017</option>
+                            <option>9/19/2017</option>
+                            <option>9/20/2017</option>
+                            <option>9/21/2017</option>
+                            <option>Date not listed</option>
+                            <option>Date on receipt not in above list</option>
+                        </select>
+                    </div>
+                    <p></p>
+                    <p>Time:</p>
+                    <p>Is the receipt total the following? </p>
+                    <div class="row">
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-2">
+                            <button onclick="to_first()" class="btn">Previous</button>
+                        </div>
+                        <div class="col-lg-2">
+                            <button onclick="to_third()" class="btn btn-secondary">Next</button>
+                        </div>
+                        <div class="col-lg-6"></div>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <!--  Third Receipt -->
+        <fieldset id="third">
+            <div class="row">
+                <div class="col-lg-6">
+                    <a href="https://planetfundraiser.com/files/get/sms-uploads/phpKTPEbR.jpg" target="_blank">
+                        <image class="img-fluid" src="https://planetfundraiser.com/files/get/sms-uploads/phpKTPEbR.jpg"></image>
+                    </a>
+                </div>
+                <div class="questions col-lg-6">
+                 <p><b>Receipt #3!</b></p>
+                    <p>Is the receipt legible?</p>
+                    <p>Yes, No</p>
+                    <p>Does the Merchant Name match the following text: Welcome to Chick-fil-A Trussville? </p>
+                    <div class="form-group">
+                        <label for="exampleSelect1">Date</label>
+                        <select class="form-control">
+                            <option>9/14/2017</option>
+                            <option>9/15/2017</option>
+                            <option>9/16/2017</option>
+                            <option>9/17/2017</option>
+                            <option>9/18/2017</option>
+                            <option>9/19/2017</option>
+                            <option>9/20/2017</option>
+                            <option>9/21/2017</option>
+                            <option>Date not listed</option>
+                            <option>Date on receipt not in above list</option>
+                        </select>
+                    </div>
+                    <p></p>
+                    <p>Time:</p>
+                    <p>Is the receipt total the following? </p>
+                    <div class="row">
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-2">
+                            <button onclick="to_second()" class="btn">Previous</button>
+                        </div>
+                        <div class="col-lg-2">
+                            <button onclick="to_fourth()" class="btn btn-secondary">Next</button>
+                        </div>
+                        <div class="col-lg-6"></div>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <!--  Fourth Receipt -->
+        <fieldset id="fourth">
+            <div class="row">
+                <div class="col-lg-6">
+                    <a href="https://planetfundraiser.com/files/get/sms-uploads/phpKTPEbR.jpg" target="_blank">
+                        <image class="img-fluid" src="https://planetfundraiser.com/files/get/sms-uploads/phpKTPEbR.jpg"></image>
+                    </a>
+                </div>
+                <div class="questions col-lg-6">
+                 <p><b>Receipt #4!</b></p>
+                    <p>Is the receipt legible?</p>
+                    <p>Yes, No</p>
+                    <p>Does the Merchant Name match the following text: Welcome to Chick-fil-A Trussville? </p>
+                    <div class="form-group">
+                        <label for="exampleSelect1">Date</label>
+                        <select class="form-control">
+                            <option>9/14/2017</option>
+                            <option>9/15/2017</option>
+                            <option>9/16/2017</option>
+                            <option>9/17/2017</option>
+                            <option>9/18/2017</option>
+                            <option>9/19/2017</option>
+                            <option>9/20/2017</option>
+                            <option>9/21/2017</option>
+                            <option>Date not listed</option>
+                            <option>Date on receipt not in above list</option>
+                        </select>
+                    </div>
+                    <p></p>
+                    <p>Time:</p>
+                    <p>Is the receipt total the following? </p>
+                    <div class="row">
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-2">
+                            <button onclick="to_third()" class="btn">Previous</button>
+                        </div>
+                        <div class="col-lg-2">
+                            <button onclick="to_fifth()" class="btn btn-secondary">Next</button>
+                        </div>
+                        <div class="col-lg-6"></div>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <!--  Fifth Receipt -->
+        <fieldset id="fifth">
+            <div class="row">
+                <div class="col-lg-6">
+                    <a href="https://planetfundraiser.com/files/get/sms-uploads/phpKTPEbR.jpg" target="_blank">
+                        <image class="img-fluid" src="https://planetfundraiser.com/files/get/sms-uploads/phpKTPEbR.jpg"></image>
+                    </a>
+                </div>
+                <div class="questions col-lg-6">
+                 <p><b>Receipt #5!</b></p>
+                    <p>Is the receipt legible?</p>
+                    <p>Yes, No</p>
+                    <p>Does the Merchant Name match the following text: Welcome to Chick-fil-A Trussville? </p>
+                    <div class="form-group">
+                        <label for="exampleSelect1">Date</label>
+                        <select class="form-control">
+                            <option>9/14/2017</option>
+                            <option>9/15/2017</option>
+                            <option>9/16/2017</option>
+                            <option>9/17/2017</option>
+                            <option>9/18/2017</option>
+                            <option>9/19/2017</option>
+                            <option>9/20/2017</option>
+                            <option>9/21/2017</option>
+                            <option>Date not listed</option>
+                            <option>Date on receipt not in above list</option>
+                        </select>
+                    </div>
+                    <p></p>
+                    <p>Time:</p>
+                    <p>Is the receipt total the following? </p>
+                    <div class="row">
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-2">
+                            <button onclick="to_fourth()" class="btn">Previous</button>
+                        </div>
+                        <div class="col-lg-2">
+                            <button onclick="to_sixth()" class="btn btn-secondary">Next</button>
+                        </div>
+                        <div class="col-lg-6"></div>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <!--  Sixth Receipt -->
+        <fieldset id="sixth">
+            <div class="row">
+                <div class="col-lg-6">
+                    <a href="https://planetfundraiser.com/files/get/sms-uploads/phpKTPEbR.jpg" target="_blank">
+                        <image class="img-fluid" src="https://planetfundraiser.com/files/get/sms-uploads/phpKTPEbR.jpg"></image>
+                    </a>
+                </div>
+                <div class="questions col-lg-6">
+                 <p><b>Receipt #6!</b></p>
+                    <p>Is the receipt legible?</p>
+                    <p>Yes, No</p>
+                    <p>Does the Merchant Name match the following text: Welcome to Chick-fil-A Trussville? </p>
+                    <div class="form-group">
+                        <label for="exampleSelect1">Date</label>
+                        <select class="form-control">
+                            <option>9/14/2017</option>
+                            <option>9/15/2017</option>
+                            <option>9/16/2017</option>
+                            <option>9/17/2017</option>
+                            <option>9/18/2017</option>
+                            <option>9/19/2017</option>
+                            <option>9/20/2017</option>
+                            <option>9/21/2017</option>
+                            <option>Date not listed</option>
+                            <option>Date on receipt not in above list</option>
+                        </select>
+                    </div>
+                    <p></p>
+                    <p>Time:</p>
+                    <p>Is the receipt total the following? </p>
+                    <div class="row">
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-2">
+                            <button onclick="to_fifth()" class="btn">Previous</button>
+                        </div>
+                        <div class="col-lg-2">
+                            <button onclick="to_seventh()" class="btn btn-secondary">Next</button>
+                        </div>
+                        <div class="col-lg-6"></div>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <!--  Seventh Receipt -->
+        <fieldset id="seventh">
+            <div class="row">
+                <div class="col-lg-6">
+                    <a href="https://planetfundraiser.com/files/get/sms-uploads/phpKTPEbR.jpg" target="_blank">
+                        <image class="img-fluid" src="https://planetfundraiser.com/files/get/sms-uploads/phpKTPEbR.jpg"></image>
+                    </a>
+                </div>
+                <div class="questions col-lg-6">
+                 <p><b>Receipt #7!</b></p>
+                    <p>Is the receipt legible?</p>
+                    <p>Yes, No</p>
+                    <p>Does the Merchant Name match the following text: Welcome to Chick-fil-A Trussville? </p>
+                    <div class="form-group">
+                        <label for="exampleSelect1">Date</label>
+                        <select class="form-control">
+                            <option>9/14/2017</option>
+                            <option>9/15/2017</option>
+                            <option>9/16/2017</option>
+                            <option>9/17/2017</option>
+                            <option>9/18/2017</option>
+                            <option>9/19/2017</option>
+                            <option>9/20/2017</option>
+                            <option>9/21/2017</option>
+                            <option>Date not listed</option>
+                            <option>Date on receipt not in above list</option>
+                        </select>
+                    </div>
+                    <p></p>
+                    <p>Time:</p>
+                    <p>Is the receipt total the following? </p>
+                    <div class="row">
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-2">
+                            <button onclick="to_sixth()" class="btn">Previous</button>
+                        </div>
+                        <div class="col-lg-2">
+                            <button onclick="to_eighth()" class="btn btn-secondary">Next</button>
+                        </div>
+                        <div class="col-lg-6"></div>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <!--  Eighth Receipt -->
+        <fieldset id="eighth">
+            <div class="row">
+                <div class="col-lg-6">
+                    <a href="https://planetfundraiser.com/files/get/sms-uploads/phpKTPEbR.jpg" target="_blank">
+                        <image class="img-fluid" src="https://planetfundraiser.com/files/get/sms-uploads/phpKTPEbR.jpg"></image>
+                    </a>
+                </div>
+                <div class="questions col-lg-6">
+                 <p><b>Receipt #8!</b></p>
+                    <p>Is the receipt legible?</p>
+                    <p>Yes, No</p>
+                    <p>Does the Merchant Name match the following text: Welcome to Chick-fil-A Trussville? </p>
+                    <div class="form-group">
+                        <label for="exampleSelect1">Date</label>
+                        <select class="form-control">
+                            <option>9/14/2017</option>
+                            <option>9/15/2017</option>
+                            <option>9/16/2017</option>
+                            <option>9/17/2017</option>
+                            <option>9/18/2017</option>
+                            <option>9/19/2017</option>
+                            <option>9/20/2017</option>
+                            <option>9/21/2017</option>
+                            <option>Date not listed</option>
+                            <option>Date on receipt not in above list</option>
+                        </select>
+                    </div>
+                    <p></p>
+                    <p>Time:</p>
+                    <p>Is the receipt total the following? </p>
+                    <div class="row">
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-2">
+                            <button onclick="to_seventh()" class="btn">Previous</button>
+                        </div>
+                        <div class="col-lg-2">
+                            <button onclick="to_ninth()" class="btn btn-secondary">Next</button>
+                        </div>
+                        <div class="col-lg-6"></div>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <!--  Ninth Receipt -->
+        <fieldset id="ninth">
+            <div class="row">
+                <div class="col-lg-6">
+                    <a href="https://planetfundraiser.com/files/get/sms-uploads/phpKTPEbR.jpg" target="_blank">
+                        <image class="img-fluid" src="https://planetfundraiser.com/files/get/sms-uploads/phpKTPEbR.jpg"></image>
+                    </a>
+                </div>
+                <div class="questions col-lg-6">
+                 <p><b>Receipt #9!</b></p>
+                    <p>Is the receipt legible?</p>
+                    <p>Yes, No</p>
+                    <p>Does the Merchant Name match the following text: Welcome to Chick-fil-A Trussville? </p>
+                    <div class="form-group">
+                        <label for="exampleSelect1">Date</label>
+                        <select class="form-control">
+                            <option>9/14/2017</option>
+                            <option>9/15/2017</option>
+                            <option>9/16/2017</option>
+                            <option>9/17/2017</option>
+                            <option>9/18/2017</option>
+                            <option>9/19/2017</option>
+                            <option>9/20/2017</option>
+                            <option>9/21/2017</option>
+                            <option>Date not listed</option>
+                            <option>Date on receipt not in above list</option>
+                        </select>
+                    </div>
+                    <p></p>
+                    <p>Time:</p>
+                    <p>Is the receipt total the following? </p>
+                    <div class="row">
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-2">
+                            <button onclick="to_eighth()" class="btn">Previous</button>
+                        </div>
+                        <div class="col-lg-2">
+                            <button onclick="to_tenth()" class="btn btn-secondary">Next</button>
+                        </div>
+                        <div class="col-lg-6"></div>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        <!--  Tenth Receipt -->
+        <fieldset id="tenth">
+            <div class="row">
+                <div class="col-lg-6">
+                    <a href="https://planetfundraiser.com/files/get/sms-uploads/phpKTPEbR.jpg" target="_blank">
+                        <image class="img-fluid" src="https://planetfundraiser.com/files/get/sms-uploads/phpKTPEbR.jpg"></image>
+                    </a>
+                </div>
+                <div class="questions col-lg-6">
+                 <p><b>Receipt #10!</b></p>
+                    <p>Is the receipt legible?</p>
+                    <p>Yes, No</p>
+                    <p>Does the Merchant Name match the following text: Welcome to Chick-fil-A Trussville? </p>
+                    <div class="form-group">
+                        <label for="exampleSelect1">Date</label>
+                        <select class="form-control">
+                            <option>9/14/2017</option>
+                            <option>9/15/2017</option>
+                            <option>9/16/2017</option>
+                            <option>9/17/2017</option>
+                            <option>9/18/2017</option>
+                            <option>9/19/2017</option>
+                            <option>9/20/2017</option>
+                            <option>9/21/2017</option>
+                            <option>Date not listed</option>
+                            <option>Date on receipt not in above list</option>
+                        </select>
+                    </div>
+                    <p></p>
+                    <p>Time:</p>
+                    <p>Is the receipt total the following? </p>
+                    <div class="row">
+                        <div class="col-lg-2"></div>
+                        <div class="col-lg-2">
+                            <button onclick="to_ninth()" class="btn">Previous</button>
+                        </div>
+                        <div class="col-lg-2">
+                            <button type="Submit" value="Submit" class="btn btn-primary">Submit HIT</button>
+                        </div>
+                        <div class="col-lg-6"></div>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
     </div>
 </body>
 
