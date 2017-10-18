@@ -7,11 +7,12 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.js"></script>
     <style>
-    body {
-        background-color: #EEEEEE;
-    }
 
+    body {
+    	background-color:#EEEEEE;
+    }
     h3 {
         padding: 10px;
     }
@@ -23,11 +24,7 @@
     }
 
     .fixed-div {
-        position: fixed;
-    }
-
-    .click-image-text {
-        font-size: 12px;
+    	position: fixed;
     }
 
     #second,
@@ -43,14 +40,18 @@
     }
 
     #padding {
-        padding-left: 10px;
-        padding-right: 10px;
+    	padding-left:10px;
+    	padding-right:10px;
     }
+
+
     </style>
     <script>
-    $(document).ready(function() {
-        $('#submitButton').hide();
-    });
+
+
+$(document).ready(function() {
+	$('#submitButton').hide();
+});
 
     function to_first() {
         document.getElementById("first").style.display = "block";
@@ -331,16 +332,14 @@
                     </a>
                 </div>
                 <div class="questions col-lg-6">
-                    <p>Is the receipt legible? </p>
-                    <div id="btn-group">
-                        <div id="padding" class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio"> Yes
-                        </div>
-                        <div id="padding" class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio"> No
-                        </div>
-                    </div>
-                    <p>Does the Merchant Name match the following text: ??????? </p>
+                	<div id="padding" class="form-check form-check-inline">
+                	<input class="form-check-input" type="radio"> Yes
+                	</div>
+                	<div id="padding" class="form-check form-check-inline">
+                	<input class="form-check-input" type="radio"> No
+                	</div>
+                    
+                    <p>Does the Merchant Name match the following text: Welcome to Chick-fil-A Trussville? </p>
                     <div class="form-group">
                         <label for="exampleSelect1">Date</label>
                         <select class="form-control">
@@ -695,17 +694,7 @@
                     <p>Does the Merchant Name match the following text: Welcome to Chick-fil-A Trussville? </p>
                     <div class="form-group">
                         <label for="exampleSelect1">Date</label>
-                        <select class="form-control">
-                            <option>9/14/2017</option>
-                            <option>9/15/2017</option>
-                            <option>9/16/2017</option>
-                            <option>9/17/2017</option>
-                            <option>9/18/2017</option>
-                            <option>9/19/2017</option>
-                            <option>9/20/2017</option>
-                            <option>9/21/2017</option>
-                            <option>Date not listed</option>
-                            <option>Date on receipt not in above list</option>
+                        <select class="form-control" id="date-picker">
                         </select>
                     </div>
                     <p></p>
@@ -728,7 +717,6 @@
         <fieldset id="tenth">
             <div class="row">
                 <div class="col-lg-6">
-                    <p class="click-image-text">(Click image to load in new window and zoom)</p>
                     <a href="https://planetfundraiser.com/files/get/sms-uploads/phptUsbD4.jpg" target="_blank">
                         <image class="img-fluid" src="https://planetfundraiser.com/files/get/sms-uploads/phptUsbD4.jpg"></image>
                     </a>
@@ -740,17 +728,7 @@
                     <p>Does the Merchant Name match the following text: Welcome to Chick-fil-A Trussville? </p>
                     <div class="form-group">
                         <label for="exampleSelect1">Date</label>
-                        <select class="form-control">
-                            <option>9/14/2017</option>
-                            <option>9/15/2017</option>
-                            <option>9/16/2017</option>
-                            <option>9/17/2017</option>
-                            <option>9/18/2017</option>
-                            <option>9/19/2017</option>
-                            <option>9/20/2017</option>
-                            <option>9/21/2017</option>
-                            <option>Date not listed</option>
-                            <option>Date on receipt not in above list</option>
+                        <select class="form-control" id="date-picker">
                         </select>
                     </div>
                     <p></p>
@@ -769,14 +747,37 @@
                 </div>
             </div>
         </fieldset>
-        <div class="row">
-            <div class="col-lg-2"></div>
-            <div class="col-lg-8">
-                <p>&nbsp;</p>
-                <p>After you have completed everything in this HIT, click the submit button below.</p>
-            </div>
-        </div>
     </div>
+
+    <script id="date-dropdown" type="text/x-handlebars-template">
+            {{#each dates}}
+            <option>{{date}}</option>
+            {{/each}}
+    </script>
+
+    <script type="text/javascript">
+        var dateTemplate = document.getElementById("date-dropdown").innerHTML;
+        var template = Handlebars.compile(dateTemplate);
+        var dateList = template({
+            dates: [
+                { date: "9/14/2017" },
+                { date: "9/15/2017"},
+                { date: "9/16/2017"},
+                { date: "9/17/2017"},
+                { date: "9/18/2017"},
+                { date: "9/19/2017"},
+                { date: "9/20/2017"},
+                { date: "9/21/2017"},
+                { date: "Date no listed"},
+                { date: "Date on receipt not in above list"}
+            ]
+        });
+
+        document.getElementById("date-picker").innerHTML += dateList;
+    </script>
+
+
+
 </body>
 
 </html>

@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.js"></script>
+</head>
+
+<body>
+    <div id="quoteData"></div>
+    <script id="quote-template" type="text/x-handlebars-template">
+        <h3>Favorite {{name}} quotes </h3>
+        <ol>
+            {{#each quotes}}
+            <li>{{quote}} {{/each}}
+        </ol>
+    </script>
+    <script type="text/javascript">
+    var quoteInfo = document.getElementById("quote-template").innerHTML;
+    var template = Handlebars.compile(quoteInfo);
+
+    var quoteData = template({
+        name: "Yogi Berra",
+        quotes: [
+            { quote: "Testing 1" },
+            { quote: "Testing 2" },
+            { quote: "Testing 3" }
+        ]
+    });
+
+    document.getElementById("quoteData").innerHTML += quoteData;
+    </script>
+</body>
+
+</html>
